@@ -1,5 +1,5 @@
 public class Account {
-  private String accountNumber;
+  private int accountNumber;
   private double balance;
   private double pin;
 
@@ -12,7 +12,7 @@ public class Account {
    * @param pin           El PIN de la cuenta. Debe ser un número de 4 dígitos (o
    *                      según el formato que desees).
    */
-  public Account(String accountNumber, double balance, double pin) {
+  public Account(int accountNumber, double balance, double pin) {
     this.accountNumber = accountNumber;
     this.balance = balance;
     this.pin = pin;
@@ -23,7 +23,7 @@ public class Account {
    * 
    * @return El número de cuenta de esta instancia.
    */
-  public String getAccountNumber() {
+  public int getAccountNumber() {
     return accountNumber;
   }
 
